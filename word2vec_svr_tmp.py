@@ -226,6 +226,7 @@ def regression(corpus_doc,corpus_doc2):
 	y_lin = svr_lin.fit(X, y).predict(X)
 	y_poly = svr_poly.fit(X, y).predict(X)
 
+	'''
 	print('y_rbf')
 	for x in range(len(y_rbf)):
 		print(y_rbf[x])
@@ -237,7 +238,7 @@ def regression(corpus_doc,corpus_doc2):
 	print('y_poly')	
 	for x in range(len(y_poly)):
 		print(y_poly[x])
-	
+	'''
 
 	print()
 
@@ -246,6 +247,7 @@ def regression(corpus_doc,corpus_doc2):
 	test_lin = svr_lin.predict(test_X)
 	test_poly = svr_poly.predict(test_X)
 
+	'''
 	print('test_rbf')
 	for x in range(len(test_rbf)):
 		print(test_rbf[x])
@@ -257,7 +259,7 @@ def regression(corpus_doc,corpus_doc2):
 	print('test_poly')	
 	for x in range(len(test_poly)):
 		print(test_poly[x])
-	
+	'''
 
 	# 相関係数計算
 	#rbf_corr = np.corrcoef(test_y, test_rbf)[0, 1]
